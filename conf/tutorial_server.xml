@@ -1,0 +1,30 @@
+<MyConfig>
+  <Service>
+    <EndPoint>0.0.0.0:12345</EndPoint>
+
+    <ServiceReadTimeout>3600000</ServiceReadTimeout>
+    <ServiceWriteTimeout>60000</ServiceWriteTimeout>
+  </Service>
+
+  <BackEnd>
+    <PushEndPoint>127.0.0.1:61234</PushEndPoint>
+    <PushDomain>127.0.0.1:62345</PushDomain>
+  </BackEnd>
+
+  <ForwardConf>
+    <Path>forward</Path>
+    <Addr>:7777</Addr>
+  </ForwardConf>
+
+  <Access>
+    <RedisEndPoints>127.0.0.1:7001#9#100#36000</RedisEndPoints>
+    <RedisEndPoints>127.0.0.1:7002#9#100#36000</RedisEndPoints>
+    <RedisEndPoints>127.0.0.1:7003#9#100#36000</RedisEndPoints>
+  </Access>
+
+  <Option>
+    <EnableVerbose>true</EnableVerbose>
+    <ForceCloseConn>false</ForceCloseConn>
+  </Option>
+  
+</MyConfig>
